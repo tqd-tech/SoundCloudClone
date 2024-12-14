@@ -1,0 +1,398 @@
+/* Mobile phone or Small Size */
+@media (max-width: 768px) {
+  .header-container {
+    background-color: white;
+    height: 7%;
+    position: relative;
+  }
+  .hidden_inPhone{
+    display: none;
+  }
+  .show_inPhone{
+    display: flex;
+  }
+  .header__inMobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+  }
+  .header__inMobile-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  .header__inMobile-logo-img {
+    width: 40px;
+    height: 40px;
+  }
+  .header__inMobile-logo-text {
+    color: black;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 3px;
+  }
+  .header__inMobile-linkDownload {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .content{
+    overflow: hidden;
+  }
+  .content__heading-phone-img{  
+    position: relative;
+  }
+  .content__heading-phone-img-inner{
+    width: 100%;
+  }
+ .content__heading-phone-text{
+  position: absolute;
+  bottom: 57%;
+ }
+ .content__heading-phone-title{
+  color: white;
+  margin-bottom: 10px;
+ }
+ .content__left-playlist-artist{
+  max-width: 35%;
+  margin-left:6px;
+ }
+ .content__left-playlist-name{
+  margin: 5px 0 5px 5px;
+  
+ }
+ .content__heading-phone-link{
+  color: white;
+  font-weight: 600;
+  background-color: black;
+  padding: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+ }
+
+ .content__left-inner{
+  flex-direction: column;
+}
+
+.content__left-playlist{
+  display: flex;
+  margin: 6px 0 ;
+}
+
+.content__left-phone-control{
+  display: flex;
+  margin: 10px 0;
+}
+
+.content__left-phone-control-action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 6px;
+  white-space: nowrap;
+}
+
+.content__left-phone-control-text{
+  color: #999999;
+  margin-left: 5px;
+}
+
+
+.content__left-playlist-img{
+  margin-right: 6px;
+}
+
+.content__left-playlist-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.content__left-heading{
+  padding-top: 0;
+  margin-left: 15px;
+  font-size: 24px;
+}
+.content__left-playlist{
+  margin-left: 15px;
+}
+.control__media{
+  height: 6%;
+  position: fixed;
+  bottom: 52px;
+}
+
+.control__media-right-left-info-name, .control__media-right-left-info-artist{
+  white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 60%;
+}
+.control__media-right-left{
+  max-width: 80%;
+}
+
+.control__media-right-left-img{
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.control__media-left-icon-phone{
+  margin: 0 5px;
+}
+
+.footer__phone-heading{
+  color: black;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+.footer__phone-downloadMobile-img{
+  width: 90px;
+  height: 30px;
+  cursor: pointer;
+}
+.footer__phone-downloadMobile-img:first-child{
+  
+  margin-left: 15px;
+}
+.footer__phone-policy{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 130px;
+}
+.footer__phone-link{
+  text-decoration: none;
+  color: black;
+  margin: 3px 0 3px 15px;
+  cursor: pointer;
+}
+.m-bottom-phone{
+  margin-bottom: 30px;
+}
+.m-top-decrease{
+  margin-top: -30px;
+}
+.footer__phone-language{
+  display: flex;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+.footer__phone-language-title{
+  font-size: 12px;
+  font-weight: normal;
+  color: #999999;
+  margin-right: 5px;
+}
+.footer__phone-socialMedia{
+  margin: 8px 0;
+}
+i{
+  cursor: pointer;
+}
+.footer__phone-socialMedia-link{
+  margin-left: 15px;
+  font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+.navbar__phone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+}
+.navbar__phone-options{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px ;
+  cursor: pointer;
+}
+.navbar__phone-icons{
+  font-size: 20px;
+}
+.navbar__phone-title{
+  font-size: 12px;
+}
+.content__left-play{
+  display: none !important;
+}
+.content__left-action{
+  display: none !important;
+}
+}
+
+/* Tablet or Medium Size */
+@media (min-width: 769px) and (max-width: 1440px) {
+  .hidden_inTablet{
+    display: none;
+  }
+  .header-container{
+    width: 100%;
+  }
+  .m-9{
+    max-width: 62% !important;
+  }
+  .content__left-playlist-artist-phone{
+    display: none;
+  }
+  .control__media-right-left{
+    width: 60%;
+  }
+  .control__media-right-left-info-name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+  }
+  .control__media-left {
+    display: flex;
+    margin-left: 50px;
+  }
+  .header__right-profile{
+    position: relative;
+  }
+  .header__right-downArrow{
+    position: absolute;
+    right: 0;
+    top: 30%;
+  }
+  .header__centre-searchInput{
+    width: 80%;
+    font-size: 12px;
+  }
+  .header__centre-searchButton{
+    position: absolute;
+    top: 7px;
+    left: 70%;
+    width: 10%;
+  }
+  .header__left-link{
+    font-size: 12px;
+    padding: 12px 15px;
+}
+.header__right-nextPro{
+  white-space: nowrap;
+}
+.header__right-forArtistsButton{
+  white-space: nowrap;
+}
+.header__right-forArtistsButton{
+  padding: 0 10px;
+}
+.header__right-uploadButton{
+  padding: 0 10px;
+}
+.header__right-noti{
+  padding: 0 10px;
+}
+.header__right-items{
+  padding-right: 5px;
+}
+.header__right-nextPro{
+  padding: 0;
+}
+.header__right-profile{
+  padding-right: 8px;
+
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content__left{
+  width: 100%;
+}
+.content__right{
+  margin-bottom: 100px;
+}
+.content__left{
+  margin-bottom: 0;
+}
+.grid.wide{
+  margin: 0 !important;
+}
+.content__right{
+  width: 100% !important;
+}
+.content__right-heading{
+  width: 280px;
+}
+
+.content__right-list{
+  width: 280px;
+}
+.content__right-footer{
+  width: 290px;
+}
+.header__right-profile::after{
+  width: 48px;
+}
+.header__right-dropDown-profile{
+  right: 13%;
+}
+.header__right-dropDown-noti{
+  right: 0;
+}
+.header__right-dropDown-message{
+  right: 0;
+}
+.header__right-moreOptions{
+  right: 0;
+}
+.header__left-logo-img{
+  margin-left: 10px;
+  border-radius: 5px;
+}
+.content__left-play-icon{
+  font-size: 20px;
+  top: 40px;
+  left: 40px;
+}
+.content__left-play::before{
+  width: 40px;
+  height: 40px;
+  top: 30px;
+  left: 30px;
+}
+.content__left-action-heart{
+  right: 50px;
+}
+.content__left-action-ellipsis{
+  right: 30px;
+}
+}
+
+/* Desktop or Large Size */
+@media (min-width: 1441px) {
+  .hidden_inLaptop{
+    display: none;
+  }
+  .content__left-playlist-artist-phone{
+    display: none;
+  }
+}

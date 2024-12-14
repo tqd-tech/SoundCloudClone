@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SoundCloud</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="icon" href="images/SoundCloud_Logo.png" type="png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="header-container">
+      <div class="header__inMobile hidden_inLaptop hidden_inTablet">
+        <div class="header__inMobile-logo ">
+          <img
+            src="/images/Header/SoundCloud_LogoMobile.png"
+            alt="SoundCloud Logo"
+            class="header__inMobile-logo-img"
+          />
+          <p class="header__inMobile-logo-text">SOUNDCLOUD</p>
+        </div>
+          <a href="#" class="header__inMobile-linkDownload">Download the app</a>
+      </div>
+      <div class="header__left hidden_inPhone hidden__inTablet">
+        <a href="#">
+          <img
+            src="images/SoundCloud_Logo.png"
+            alt="SoundCloud Logo"
+            class="header__left-logo-img"
+          />
+        </a>
+        <nav class="header__left-navbar">
+          <ul class="header__left-list">
+            <li class="header__left-items header__left-items-highlight">
+              <a href="#" class="header__left-link">Home</a>
+            </li>
+            <li class="header__left-items">
+              <a href="#" class="header__left-link">Feed</a>
+            </li>
+            <li class="header__left-items">
+              <a href="#" class="header__left-link header__left-link-width"
+                >Library</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__centre hidden_inPhone hidden__inTablet">
+        <form class="header__centre-form">
+          <input
+            type="text"
+            class="header__centre-searchInput"
+            placeholder="Search"
+          />
+          <button
+            class="header__centre-searchButton"
+            title="Click to search"
+            type="button"
+          >
+            <i class="fa-solid fa-magnifying-glass " style="cursor: pointer"></i>
+          </button>
+        </form>
+      </div>
+      <div class="header__right hidden_inPhone hidden__inTablet">
+        <div class="header__right-nextPro">
+          <a href="#" class="header__right-link header__right-link-highlight"
+            >Try Next Pro</a
+          >
+        </div>
+        <div class="header__right-forArtistsButton">
+          <a href="#" class="header__right-link">For Artists</a>
+        </div>
+        <div class="header__right-uploadButton">
+          <a href="#" class="header__right-link">Upload</a>
+        </div>
+        <div class="header__right-useNav">
+          <ul class="header__right-list">
+            <li class="header__right-items header__right-profile">
+              <div class="header__right-profile">
+                <img
+                  src="/images/Header/22_0.jpg"
+                  alt="Avatar"
+                  class="header__right-avatar"
+                />
+                <div class="header__right-downArrow">
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+              </div>
+              <div
+                class="header__right-dropDown header__right-dropDown-profile"
+              >
+                <a href="#profile" class="header__right-dropDown-link"
+                  >Profile</a
+                >
+                <a href="#likes" class="header__right-dropDown-link">Likes</a>
+                <a href="#playlists" class="header__right-dropDown-link"
+                  >Playlists</a
+                >
+                <a href="#stations" class="header__right-dropDown-link"
+                  >Stations</a
+                >
+                <a href="#who-to-follow" class="header__right-dropDown-link"
+                  >Who to follow</a
+                >
+                <a href="#try-next-pro" class="header__right-dropDown-link"
+                  >Try Next Pro</a
+                >
+                <a href="#tracks" class="header__right-dropDown-link">Tracks</a>
+                <a href="#distribute" class="header__right-dropDown-link"
+                  >Distribute</a
+                >
+              </div>
+              <!-- Nút dropdown sử dụng after - pseudo class -->
+            </li>
+            <li class="header__right-items">
+              <div class="header__right-noti" style="cursor: pointer">
+                <i class="fa-solid fa-bell"></i>
+                <div class="header__right-dropDown header__right-dropDown-noti">
+                  <div
+                    class="header__right-dropDown--header header__right-dropDown-item"
+                  >
+                    <h2 class="header__right-dropDown--title">Notification</h2>
+                    <a href="#" class="header__right-dropDown--header--link"
+                      >Setting</a
+                    >
+                  </div>
+                  <span
+                    class="header__right-dropDown-content header__right-dropDown-item header__right-dropDown-no-border"
+                    >No notifications</span
+                  >
+                  <span
+                    class="header__right-dropDown-footer header__right-dropDown-item"
+                    >View all notifications</span
+                  >
+                </div>
+              </div>
+            </li>
+
+            <li class="header__right-items">
+              <div class="header__right-message" style="cursor: pointer">
+                <i class="fa-solid fa-envelope"></i>
+                <div
+                  class="header__right-dropDown header__right-dropDown-message"
+                >
+                  <div
+                    class="header__right-dropDown--header header__right-dropDown-item"
+                  >
+                    <h2 class="header__right-dropDown--title">Message</h2>
+                  </div>
+                  <span
+                    class="header__right-dropDown-content header__right-dropDown-item"
+                  >
+                    No message
+                  </span>
+                  <span
+                    class="header__right-dropDown-footer header__right-dropDown-item"
+                  >
+                    View all messages
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="header__right-more">
+          <div class="header__right-moreIcon-wrapper">
+            <i class="fa-solid fa-ellipsis header__right-moreIcon"></i>
+            <div class="header__right-moreOptions">
+              <a href="#about-us" class="header__right-dropDown-link"
+                >About us</a
+              >
+              <a href="#legal" class="header__right-dropDown-link">Legal</a>
+              <a href="#copyright" class="header__right-dropDown-link"
+                >Copyright</a
+              >
+              <a href="#mobile-apps" class="header__right-dropDown-link"
+                >Mobile apps</a
+              >
+              <a href="#for-creators" class="header__right-dropDown-link"
+                >For Creators</a
+              >
+              <a href="#blogs" class="header__right-dropDown-link">Blogs</a>
+              <a href="#jobs" class="header__right-dropDown-link">Jobs</a>
+              <a href="#developers" class="header__right-dropDown-link"
+                >Developers</a
+              >
+              <a href="#soundcloud-store" class="header__right-dropDown-link"
+                >SoundCloud Store</a
+              >
+              <a href="#support" class="header__right-dropDown-link">Support</a>
+              <a href="#keyboard-shortcuts" class="header__right-dropDown-link"
+                >Keyboard shortcuts</a
+              >
+              <a href="#subscription" class="header__right-dropDown-link"
+                >Subscription</a
+              >
+              <a href="#settings" class="header__right-dropDown-link"
+                >Settings</a
+              >
+              <a href="#sign-out" class="header__right-dropDown-link"
+                >Sign Out</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Content -->
+    <div class="content">
+      <div class="grid wide container">
+        <div class="row">
+          <div class="col l-9 m-9 m-bottom-laptop m-bottom-phone m-top-decrease " >
+            <!-- Artists you should know -->
+            <div class="content__left">
+              <div class="content__left-title">
+                <h1 class="content__left-heading">Artists you should know</h1>
+              </div>
+              <div class="content__left-inner">
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/Mix1forMixed.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Your mix 1</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      Bạn gái mùa đông , Luyện, Quy HunterLove, Phan Le Thanh
+                      Tai, Nguyễn Đức Quyền 12E
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">184.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">2.47</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+
+
+                  <div class="content__left-play ">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/Mix2forMixed.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Your mix 2</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      RoKunn.95, My Nguyễn, Minh Wise, Kimmese, True Love
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">125.4k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">2.58</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/Mix3forMixed.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Your mix 3</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      Trần Vũ Minh Khôi, BENPROD, Thanh Truc Vo, Công Hiển,
+                      DeeYouSee
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">14.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">3.58</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">2 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/Mix4forMixed.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Your mix 4</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      Minh Wise, Nguyễn Đức Quyền 12E, Kimmese, NH4T, Thích Nghe
+                      Nhạc Muzik - Music For You
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">25.6k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">3.12</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">6 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Mix for Name -->
+            <div class="content__left">
+              <div class="content__left-title">
+                <h1 class="content__left-heading">Introduce Buzzing</h1>
+              </div>
+              <div class="content__left-inner">
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/IB1_BuzzingMetal.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Buzzing Metal</a
+                    >
+                    <p class="content__left-playlist-artist">New!</p>
+
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/IB2_BuzzingElectronic.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Buzzing Electronic</a
+                    >
+                    <p class="content__left-playlist-artist">New!</p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">184.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">2.47</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/IB3_BuzzingR&B.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Buzzing R&B</a
+                    >
+                    <p class="content__left-playlist-artist">New!</p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">184.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">2.47</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/IB4_BuzzingRock.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Buzzing Rock</a
+                    >
+                    <p class="content__left-playlist-artist">New!</p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">184.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">2.47</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trending Music -->
+            <div class="content__left">
+              <div class="content__left-title">
+                <h1 class="content__left-heading">
+                  Trending Music on SoundCloud
+                </h1>
+              </div>
+              <div class="content__left-inner">
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/TM1_HipHopAndRap.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Hip Hop and Rap</a
+                    >
+                    <p class="content__left-playlist-artist">Trending Music</p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/TM2_House.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name">House</a>
+                    <p class="content__left-playlist-artist">Trending Music</p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">184.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">2.47</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/TM3_Techno.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name">Techno</a>
+                    <p class="content__left-playlist-artist">Trending Music</p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">184.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">2.47</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/TM4_.RockMetalPunkjpg.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Rock, Metal, Punk</a
+                    >
+                    <p class="content__left-playlist-artist">Trending Music</p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Party -->
+            <div class="content__left">
+              <div class="content__left-title">
+                <h1 class="content__left-heading">Party</h1>
+              </div>
+              <div class="content__left-inner">
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/Pt1_Rap.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name">Rap</a>
+                    <p class="content__left-playlist-artist">
+                      Discovery Playlists
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/Pt2_DancehallVibes.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Dancehall Vibes</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      Discovery Playlists
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/Pt3_TechnoMachinista.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Techno Machinista</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      Discovery Playlists
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/Pt4_Superspeed.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Superspeed</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      Discovery Playlists
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Music Therapy  -->
+            <div class="content__left">
+              <div class="content__left-title">
+                <h1 class="content__left-heading">Music Therapy</h1>
+              </div>
+              <div class="content__left-inner">
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/S1_BrainBeats.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Brain Beats</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      Discovery Playlists
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/S2_LastNightLofi.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Last Night Lofi</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      Discovery Playlists
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/S3_DnBStudyHours.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >DnB Study Hours</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      Discovery Playlists
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content__left-playlist l-3 c-3 m-3">
+                  <img
+                    src="/images/Content/S4_FocusBrainWaves.jpg"
+                    alt="Playlist Mix 1"
+                    class="content__left-playlist-img"
+                  />
+                  <div class="content__left-playlist-info">
+                    <a href="#" class="content__left-playlist-name"
+                      >Focus Brain Wave</a
+                    >
+                    <p class="content__left-playlist-artist">
+                      Discovery Playlists
+                    </p>
+                    <div class="content__left-phone-control hidden_inLaptop hidden_inTablet">
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="content__left-phone-control-text">2.1k</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-clock"></i>
+                        <span class="content__left-phone-control-text">4:52</span>
+                      </div>
+                      <div class="content__left-phone-control-action">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span class="content__left-phone-control-text">3 months</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__left-play">
+                    <i class="fa-solid fa-play content__left-play-icon"></i>
+                  </div>
+                  <div class="content__left-action">
+                    <i class="fa-solid fa-heart content__left-action-heart"></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__left-action-ellipsis"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col l-3 m-3">
+            <div
+              class="content__right hidden_inPhone "
+              style="position: sticky; top: 0"
+            >
+              <!-- Artist List -->
+              <div class="content__right-heading">
+                <div class="content__right-click">
+                  <i class="fa-solid fa-user-group content__right-icon"></i>
+                  Artists you should folow
+                </div>
+                <div class="content__right-click">
+                  <i class="fa-solid fa-rotate-right content__right-icon"></i>
+                  Refresh list
+                </div>
+              </div>
+              <ul class="content__right-list">
+                <li class="content__right-items">
+                  <div class="content__right-items-divide">
+                    <div class="content__right-items-info">
+                      <img
+                        class="content__right-items-img"
+                        src="/images/Content/RinMusicLogo.jpg"
+                        alt="Rin Music Logo"
+                      />
+                      <div class="content__right-items-info-text">
+                        <h3 class="content__right-items-info-name">
+                          Rin Music
+                        </h3>
+                        <span class="content__right-items-info-followers">
+                          <i class="fa-solid fa-user-group"></i>
+                          1,468
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <img
+                            src="/images/Content/voicWaveIcon.svg"
+                            alt="Voice Wave Icon"
+                          />
+                          43
+                        </span>
+                      </div>
+                    </div>
+                    <span class="content__right-items-followButton">
+                      <i class="fa-solid fa-user-plus"></i>
+                      Follow
+                    </span>
+                  </div>
+                </li>
+                <li class="content__right-items">
+                  <div class="content__right-items-divide">
+                    <div class="content__right-items-info">
+                      <img
+                        class="content__right-items-img"
+                        src="/images/Content/AirMusicLogo.jpg"
+                        alt="Air Music Logo"
+                      />
+                      <div class="content__right-items-info-text">
+                        <h3 class="content__right-items-info-name">
+                          Air Music
+                        </h3>
+                        <span class="content__right-items-info-followers">
+                          <i
+                            class="fa-solid fa-user-group content__right-items-icon"
+                          ></i>
+                          976
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <img
+                            src="/images/Content/voicWaveIcon.svg"
+                            alt="Voice Wave Icon"
+                          />
+                          40
+                        </span>
+                      </div>
+                    </div>
+                    <span class="content__right-items-followButton">
+                      <i class="fa-solid fa-user-plus"></i>
+                      Follow
+                    </span>
+                  </div>
+                </li>
+                <li class="content__right-items">
+                  <div class="content__right-items-divide">
+                    <div class="content__right-items-info">
+                      <img
+                        class="content__right-items-img"
+                        src="/images/Content/GiaCatThachLogo.jpg"
+                        alt="Gia Cat Thach Logo"
+                      />
+                      <div class="content__right-items-info-text">
+                        <h3 class="content__right-items-info-name">
+                          Gia Cat Thach
+                        </h3>
+                        <span class="content__right-items-info-followers">
+                          <i
+                            class="fa-solid fa-user-group content__right-items-icon"
+                          ></i>
+                          315
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <img
+                            src="/images/Content/voicWaveIcon.svg"
+                            alt="Voice Wave Icon"
+                          />
+                          5
+                        </span>
+                      </div>
+                    </div>
+                    <span class="content__right-items-followButton">
+                      <i class="fa-solid fa-user-plus"></i>
+                      Follow
+                    </span>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Favorable List -->
+              <div class="content__right-heading">
+                <div class="content__right-click">
+                  <i class="fa-solid fa-heart content__right-icon"></i>
+                  102 likes
+                </div>
+                <div class="content__right-click">View All</div>
+              </div>
+              <ul class="content__right-list">
+                <li class="content__right-items">
+                  <div class="content__right-items-divide">
+                    <div class="content__right-items-info">
+                      <img
+                        class="content__right-items-img no-border-radius"
+                        src="/images/Content/ThayLongBaiHat.jpg"
+                        alt="Thay Lòng "
+                      />
+                      <div class="content__right-items-info-text">
+                        <span class="content__right-items-brand-name"
+                          >NH4T</span
+                        >
+                        <p class="content__right-items-favo-song">
+                          Thay Lòng (Lofi By NH4T) DIMZ x TVk x WindV / Tạm biệt
+                          nhé người em yêu ~
+                        </p>
+                        <span class="content__right-items-info-followers">
+                          <i class="fa-solid fa-play"></i>
+
+                          1,468
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-heart content__right-icon"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-repeat"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-message"></i>
+                          43
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__right-playMini">
+                    <i
+                      class="fa-solid fa-play content__right-play-iconMini"
+                    ></i>
+                  </div>
+                  <div class="content__right-action">
+                    <i
+                      class="fa-solid fa-heart content__right-action-heartMini"
+                    ></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__right-action-ellipsisMini"
+                    ></i>
+                  </div>
+                </li>
+                <li class="content__right-items">
+                  <div class="content__right-items-divide">
+                    <div class="content__right-items-info">
+                      <img
+                        class="content__right-items-img no-border-radius"
+                        src="/images/Content/BuocQuaDoiNhauBaiHat.jpg"
+                        alt="Bước Qua Đời Nhau"
+                      />
+                      <div class="content__right-items-info-text">
+                        <p class="content__right-items-brand-name">
+                          Thích Nghe Nhạc Muzik - Music For You
+                        </p>
+                        <p class="content__right-items-favo-song">
+                          Bước Qua Đời Nhau(ft Liho Indra & Liho Family)- ARS
+                          Remix
+                        </p>
+                        <span class="content__right-items-info-followers">
+                          <i class="fa-solid fa-play"></i>
+
+                          1,468
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-heart content__right-icon"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-repeat"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-message"></i>
+                          43
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__right-playMini">
+                    <i
+                      class="fa-solid fa-play content__right-play-iconMini"
+                    ></i>
+                  </div>
+                  <div class="content__right-action">
+                    <i
+                      class="fa-solid fa-heart content__right-action-heartMini"
+                    ></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__right-action-ellipsisMini"
+                    ></i>
+                  </div>
+                </li>
+                <li class="content__right-items">
+                  <div class="content__right-items-divide">
+                    <div class="content__right-items-info">
+                      <img
+                        class="content__right-items-img no-border-radius"
+                        src="/images/Content/NhatNhoaMuaPhaiBaiHat.jpg"
+                        alt="Nhạt Nhoà Mưa Phai"
+                      />
+                      <div class="content__right-items-info-text">
+                        <span class="content__right-items-brand-name"
+                          >Rimi</span
+                        >
+                        <p class="content__right-items-favo-song">
+                          Nhat Nhoa Mua Phai - Huong Ly (Rimi Remix Full)
+                        </p>
+                        <span class="content__right-items-info-followers">
+                          <i class="fa-solid fa-play"></i>
+
+                          1,468
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-heart content__right-icon"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-repeat"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-message"></i>
+                          43
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__right-playMini">
+                    <i
+                      class="fa-solid fa-play content__right-play-iconMini"
+                    ></i>
+                  </div>
+                  <div class="content__right-action">
+                    <i
+                      class="fa-solid fa-heart content__right-action-heartMini"
+                    ></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__right-action-ellipsisMini"
+                    ></i>
+                  </div>
+                </li>
+              </ul>
+              <!-- Listening History -->
+              <div class="content__right-heading">
+                <div class="content__right-click">
+                  <i class="fa-solid fa-calendar-days content__right-icon"></i>
+                  Listening History
+                </div>
+                <div class="content__right-click">View All</div>
+              </div>
+              <ul class="content__right-list">
+                <li class="content__right-items">
+                  <div class="content__right-items-divide">
+                    <div class="content__right-items-info">
+                      <img
+                        class="content__right-items-img no-border-radius"
+                        src="/images/Content/DemLaoXaoBaiHat.jpg"
+                        alt="Dem Lao Xao"
+                      />
+                      <div class="content__right-items-info-text">
+                        <span class="content__right-items-brand-name">
+                          Maxwell Lau, May Piano
+                        </span>
+                        <p class="content__right-items-favo-song">
+                          Dem Lao Xao
+                        </p>
+                        <span class="content__right-items-info-followers">
+                          <i class="fa-solid fa-play"></i>
+
+                          1,468
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-heart content__right-icon"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-repeat"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-message"></i>
+                          43
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content__right-playMini">
+                    <i
+                      class="fa-solid fa-play content__right-play-iconMini"
+                    ></i>
+                  </div>
+                  <div class="content__right-action">
+                    <i
+                      class="fa-solid fa-heart content__right-action-heartMini"
+                    ></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__right-action-ellipsisMini"
+                    ></i>
+                  </div>
+                </li>
+                <li class="content__right-items">
+                  <div class="content__right-items-divide">
+                    <div class="content__right-items-info">
+                      <img
+                        class="content__right-items-img no-border-radius"
+                        src="/images/Content/ChuyenDoiTaBaiHat.jpg"
+                        alt="Chuyện Đôi Ta"
+                      />
+                      <div class="content__right-items-info-text">
+                        <p class="content__right-items-brand-name">DeeYouSee</p>
+                        <p class="content__right-items-favo-song">
+                          Chuyện Đôi Ta (DeeYouSee Remake) - Emcee L (Da LAB)
+                          Ft. Muộii
+                        </p>
+                        <span class="content__right-items-info-followers">
+                          <i class="fa-solid fa-play"></i>
+
+                          1,468
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-heart content__right-icon"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-repeat"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-message"></i>
+                          43
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__right-playMini">
+                    <i
+                      class="fa-solid fa-play content__right-play-iconMini"
+                    ></i>
+                  </div>
+                  <div class="content__right-actionMini">
+                    <i
+                      class="fa-solid fa-heart content__right-action-heartMini"
+                    ></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__right-action-ellipsisMini"
+                    ></i>
+                  </div>
+                </li>
+                <li class="content__right-items">
+                  <div class="content__right-items-divide">
+                    <div class="content__right-items-info">
+                      <img
+                        class="content__right-items-img no-border-radius"
+                        src="/images/Content/HoaTanTinhTanBaiHat.jpg"
+                        alt="Hoa Tàn Tình Tan"
+                      />
+                      <div class="content__right-items-info-text">
+                        <span class="content__right-items-brand-name"
+                          >BENPROD</span
+                        >
+                        <p class="content__right-items-favo-song">
+                          Hoa Tàn Tình Tan - Giang Jolie
+                        </p>
+                        <span class="content__right-items-info-followers">
+                          <i class="fa-solid fa-play"></i>
+
+                          1,468
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-heart content__right-icon"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-repeat"></i>
+                          43
+                        </span>
+                        <span class="content__right-items-info-tracks">
+                          <i class="fa-solid fa-message"></i>
+                          43
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content__right-playMini">
+                    <i
+                      class="fa-solid fa-play content__right-play-iconMini"
+                    ></i>
+                  </div>
+                  <div class="content__right-action">
+                    <i
+                      class="fa-solid fa-heart content__right-action-heartMini"
+                    ></i>
+                    <i
+                      class="fa-solid fa-ellipsis content__right-action-ellipsisMini"
+                    ></i>
+                  </div>
+                </li>
+              </ul>
+              <!-- Download -->
+              <div class="content__right-heading">
+                <div class="content__right-click">Go mobile</div>
+              </div>
+              <div class="content__right-downloadMobile">
+                <img
+                  src="/images/Content/downloadIOS.jpg"
+                  alt="Download SoundCloud for IOS"
+                  class="content__right-downloadMobile-img"
+                />
+                <img
+                  src="/images/Content/downloadAndroid.jpg"
+                  alt="Download SoundCloud for Android"
+                  class="content__right-downloadMobile-img"
+                />
+              </div>
+              <!-- Legal, Privacy, ... -->
+              <div class="content__right-footer">
+                <a href="#" class="content__right-footer-link">Legal</a> -
+                <a href="#" class="content__right-footer-link">Privacy</a> -
+                <a href="#" class="content__right-footer-link">Cookie Policy</a>
+                -
+                <a href="#" class="content__right-footer-link"
+                  >Cookie Manager</a
+                >
+                - <a href="#" class="content__right-footer-link">Imprint</a> -
+                <a href="#" class="content__right-footer-link"
+                  >Artist Resources</a
+                >
+                <a href="#" class="content__right-footer-link">Blog</a> -
+                <a href="#" class="content__right-footer-link">Charts</a> -
+                <a href="#" class="content__right-footer-link"
+                  >Transparent Report</a
+                >
+                <div class="content__right-footer-language">
+                  <h2 class="content__right-footer-language-title">Language</h2>
+                  <span class="content__right-footer-language-option"
+                    >: English (US)</span
+                  >
+                </div>
+              </div>
+            </div>
+
+             <!-- Footer in Phone -->
+             <div class="footer__phone hidden_inLaptop hidden_inTablet">
+              <h2 class="footer__phone-heading">Get the full SoundCloud experience with our app</h2>
+            </div>
+            <div class="footer__phone-downloadMobile hidden_inLaptop hidden_inTablet">
+              <img
+                src="/images/Content/downloadIOS.jpg"
+                alt="Download SoundCloud for IOS"
+                class="footer__phone-downloadMobile-img"
+              />
+              <img
+                src="/images/Content/downloadAndroid.jpg"
+                alt="Download SoundCloud for Android"
+                class="footer__phone-downloadMobile-img"
+              />
+            </div>
+            
+            <!-- Legal, Privacy, ... -->
+            <div class="footer__phone-policy hidden_inLaptop hidden_inTablet">
+              <a href="#" class="footer__phone-link">Charts</a> 
+              <a href="#" class="footer__phone-link">Company</a> 
+              <a href="#" class="footer__phone-link">About</a>
+              
+              <a href="#" class="footer__phone-link"
+                >Directory</a
+              >
+              <a href="#" class="footer__phone-link">Blog</a> 
+              <a href="#" class="footer__phone-link"
+                >Careers</a
+              >
+              <a href="#" class="footer__phone-link">Developers</a> 
+              <a href="#" class="footer__phone-link">Legal Information</a> 
+              <a href="#" class="footer__phone-link"
+                >Cookie Manager</a
+              >
+              <a href="#" class="footer__phone-link">Copyright</a> 
+              <div class="footer__phone-socialMedia">
+                <a href="#" class="footer__phone-socialMedia-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="footer__phone-socialMedia-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="footer__phone-socialMedia-link"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+              <div class="footer__phone-language">
+                <h2 class="footer__phone-language-title">@2024 SoundCloud Language: </h2>
+                <span class="footer__phone-language-option"
+                  >English (US)</span
+                >
+              </div>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Playing Music -->
+    <div class="control__media">
+      <div class="control__media-left hidden_inPhone ">
+        <i class="fa-solid fa-forward-step control__media-left-icon"></i>
+
+        <i class="fa-solid fa-play control__media-left-icon"></i>
+
+        <i class="fa-solid fa-backward-step control__media-left-icon"></i>
+
+        <i class="fa-solid fa-shuffle control__media-left-icon"></i>
+
+        <i
+          class="fa-solid fa-rotate-right control__media-left-icon padding-right"
+        ></i>
+      </div>
+      <div class="control__media-center hidden_inPhone ">
+        <span class="control__media-center-start">00:00</span>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="20"
+          style="width: 200px; cursor: pointer"
+        />
+        <span class="control__media-center-end">04:39</span>
+        <div class="control__media-center-controlVolumn">
+          <i
+            class="fa-solid fa-volume-high control__media-center-volumeIcon"
+          ></i>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="100"
+            class="control__media-center-volumeRange"
+          />
+        </div>
+      </div>
+      <div class="control__media-right">
+        <div class="control__media-right-left">
+          <img
+            src="images/Content/NhatNhoaMuaPhaiBaiHat.jpg"
+            alt="Nhạt Nhào Mưa Phai"
+            class="control__media-right-left-img"
+          />
+          <div class="control__media-right-left-info">
+            <span class="control__media-right-left-info-artist">Rimi</span>
+            <span class="control__media-right-left-info-name"
+              >Nhat Nhoa Mua Phai - Huong Ly (Rimi Remix Full)</span
+            >
+          </div>
+        </div>
+        <div class="control__media-right-right hidden_inPhone ">
+          <i class="fa-solid fa-heart control__media-left-icon"></i>
+          <i class="fa-solid fa-user-plus control__media-left-icon"></i>
+          <i class="fa-solid fa-outdent control__media-left-icon"></i>
+        </div>
+        <div class="control__media-right-right-phone hidden_inLaptop hidden_inTablet">
+          <i class="fa-solid fa-play control__media-left-icon-phone"></i>
+          <i class="fa-regular fa-heart control__media-left-icon-phone"></i>
+        </div>
+      </div>
+      
+      <div class="navbar__phone hidden_inLaptop hidden_inTablet">
+        <div class="navbar__phone-options">
+          <span class="navbar__phone-icons"><i class="fas fa-house"></i></span>
+          <p class="navbar__phone-title">Welcome</p>
+        </div>
+        <div class="navbar__phone-options">
+          <span class="navbar__phone-icons"><i class="fas fa-circle-plus"></i></span>
+          <p class="navbar__phone-title">News Feed</p>
+        </div>
+        <div class="navbar__phone-options">
+          <span class="navbar__phone-icons"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <p class="navbar__phone-title">To Research</p>
+        </div>
+        <div class="navbar__phone-options">
+          <span class="navbar__phone-icons"><i class="fa-solid fa-folder"></i></span>
+          <p class="navbar__phone-title">Library</p>
+        </div>
+        <div class="navbar__phone-options">
+          <span class="navbar__phone-icons"><i class="fas fa-circle-arrow-down"></i></span>
+          <p class="navbar__phone-title">Download</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
