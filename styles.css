@@ -134,11 +134,19 @@
 }
 
 /* Dropdown For UseNav and More */
+.header__right-profile{
+    padding-right: 10px;
+    padding-left: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
 .header__right-dropDown-profile{
     display: none;
     position: absolute;
-    top: 45px;
-    right: 16%;
+    top: 38px;
+    left: 0;
+    width: 120px;
     color: #333;
     border: 1px solid #ccc;
     border-bottom-left-radius: 5px;
@@ -146,14 +154,6 @@
     font-weight: 600;
     background-color: white;
     z-index: 1;
-}
-
-
-.header__right-profile{
-    padding-right: 10px;
-    padding-left: 3px;
-    cursor: pointer;
-    position: relative;
 }
 
 .header__right-profile::after{
@@ -332,11 +332,16 @@
     flex-direction: column;
 }
 
+.header__right-moreIcon-wrapper{
+    position: relative;
+}
+
 .header__right-moreOptions{
     display: none;
     position: absolute;
-    top: 45px;
-    right: 80px;
+    top: 40px;
+    width: 160px;
+    right: 0;
     color: #333;
     border: 1px solid #ccc;
     border-bottom-left-radius: 5px;
@@ -345,8 +350,6 @@
     background-color: white;
     z-index: 1;
 }
-
-
 
 .text-1{
     background-color: red;
@@ -743,17 +746,19 @@
     margin: 0 12px;
 }
 
+.control__media-center-controlVolumn{
+    position: relative;
+}
 
 
 .control__media-center-volumeRange{
     display: none;
     width: 100px; 
     cursor: pointer; 
-    margin-right: 10px; 
     position: absolute;
-    bottom: 80px;
-    left: 58%;
-    transform: rotate(-90deg);
+    bottom: 80px; /* Đặt phần tử nằm ngay trên phần tử cha */
+    left: 50%; /* Canh giữa theo chiều ngang của phần tử cha */
+    transform: translateX(-50%) rotate(-90deg); 
     background-color: red;
 }
 
@@ -765,10 +770,10 @@
     content: "";
     position: absolute;
     bottom: 50%;
-    right: 38%;
-    background-color: red;
+    right: 50%;
+    transform: translateX(50%);
     width: 20px; 
-    height: 20px;
+    height: 40px;
     background-color: transparent;
     cursor: pointer;
 }
